@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Donghyeon Choi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**AI Study\n[ML, kears, tensorflow]**"
+  bio              : "**AI Study [ML, kears, tensorflow]**"
   location         : "Korea"
   email            :
   links:
