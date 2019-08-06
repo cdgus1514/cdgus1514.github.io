@@ -18,8 +18,8 @@ description              : "인공지능 챗봇 프로젝트"
 url                      : "https://cdgus1514.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/test.jpg"
-logo                     : ![]({{ site.url }}{{ site.baseurl }}/assets/images/test.jpg    )
+teaser                   : "/assets/images/bio-photo-test.jpg"
+logo                     : ![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-test.jpg    )
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -102,14 +102,14 @@ analytics:
 # Site Author
 author:
   name             : "Donghyeon Choi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**AI Study [ML, kears, tensorflow]**"
-  location         : "Korea"
+  avatar           : ""/assets/images/bio-photo-test.jpg"
+  bio              : "**인공지능 공부**[ML, kears, tensorflow]"
+  location         : "South Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:cdgus1514@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/cdgus1514"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -137,7 +137,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/cdgus1514"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
