@@ -1,8 +1,11 @@
 ---
 title: "chatbot project"
-permalink: /project/
-layout: single
+permalink: /categories/project/
+layout: category
 author_profile: true
+toc_sticky: true
+toc_ads: true
+taxonomy: project
 ---
 
 ## chatbot project

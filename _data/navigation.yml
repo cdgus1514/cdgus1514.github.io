@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "딥러닝"
-    url: /deep/
+    url: /categories/딥러닝/
 
   - title: "프로젝트"
-    url: /project/
+    url: /categories/project/
