@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Donghyeon Choi"
-  avatar           : ""/assets/images/bio-photo-test.jpg"
+  avatar           : "/assets/images/bio-photo-test.jpg"
   bio              : "**인공지능 공부**[ML, kears, tensorflow]"
   location         : "South Korea"
   email            :
