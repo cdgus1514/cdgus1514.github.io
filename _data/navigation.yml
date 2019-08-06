@@ -1,6 +1,7 @@
 # main links
 main:
-  - title: "블로그 방문하기"
-    url: https://cdgus1514.github.io
-  - title: "About"
-    url: /about/
+  - title: "딥러닝"
+    url: /deep/
+
+  - title: "프로젝트"
+    url: /project/
