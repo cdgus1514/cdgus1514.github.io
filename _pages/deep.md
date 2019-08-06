@@ -1,6 +1,8 @@
 ---
 title: "Deep Learning"
 permalink: /deep/
+toc_sticky: true
+toc_ads : true
 layout: single
 ---
 
