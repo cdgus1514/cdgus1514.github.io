@@ -1,10 +1,11 @@
 ---
 title: "Deep Learning"
-permalink: /deep/
-layout: single
+permalink: /categories/deep/
+layout: category
 author_profile: true
+taxonomy: deep
 ---
 
 ## 딥러닝 공부 정리
 
-DNN
+DNN, RNN, CNN, 자연어처리, 강화학습
