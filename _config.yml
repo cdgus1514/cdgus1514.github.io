@@ -18,8 +18,8 @@ description              : "인공지능 챗봇 프로젝트"
 url                      : "https://cdgus1514.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/bio-photo-test.jpg"
-logo                     : "![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-test.jpg    )"
+teaser                   : "/assets/images/bio-photo-deep.png"
+logo                     : "![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-deep.png    )"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Donghyeon Choi"
-  avatar           : "/assets/images/bio-photo-test.jpg"
+  avatar           : "/assets/images/bio-photo-deep.png"
   bio              : "**인공지능 공부**[ML, kears, tensorflow]"
   location         : "South Korea"
   email            :
