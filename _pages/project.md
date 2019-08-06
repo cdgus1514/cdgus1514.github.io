@@ -2,6 +2,7 @@
 title: "chatbot project"
 permalink: /project/
 layout: single
+author_profile: true
 ---
 
 ## chatbot project
