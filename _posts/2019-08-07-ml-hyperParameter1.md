@@ -11,7 +11,8 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 ---
 
 
-__머신러닝으로 하이퍼파라미터 튜닝__
+__#머신러닝 하이퍼파라미터 튜닝__
+=====
 - all_estimators
 - GridSearchCV
 - RandomizedSearchCV
@@ -23,10 +24,14 @@ __머신러닝으로 하이퍼파라미터 튜닝__
 2. 회귀모델
 3. 클러스터링 모델
 4. 차원축소 모델
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
-
-__[Usage]__
+__##[Usage]__
+-----
 
 **from** sklearn.utils.testing **import** all_estimators  
 allAlgorithms = all_estimators(type_filter="모델타입")
