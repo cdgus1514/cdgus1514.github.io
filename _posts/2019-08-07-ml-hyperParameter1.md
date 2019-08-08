@@ -10,15 +10,13 @@ tags:
 last_modified_at: 2019-08-07T08:06:00-05:00
 ---
 <br>
-<br>
 
-#__머신러닝 하이퍼파라미터 튜닝__
+# 머신러닝 하이퍼파라미터 튜닝
 =====
 - all_estimators
 - GridSearchCV
 - RandomizedSearchCV
 
-<br>
 <br>
 <br>
 
@@ -33,7 +31,7 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 <br>
 <br>
 
-##__[Usage]__
+## __[Usage]__
 -----
 
 **from** sklearn.utils.testing **import** all_estimators  
