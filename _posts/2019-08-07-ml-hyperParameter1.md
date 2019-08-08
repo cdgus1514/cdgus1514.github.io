@@ -10,11 +10,8 @@ tags:
 last_modified_at: 2019-08-07T08:06:00-05:00
 ---
 
-<<<<<<< HEAD
-##*머신러닝으로 하이퍼파라미터 튜닝*
-=======
+
 __머신러닝으로 하이퍼파라미터 튜닝__
->>>>>>> 7bc2cb702b7134b19f26ddfeeb6e2d56e443b80c
 - all_estimators
 - GridSearchCV
 - RandomizedSearchCV
@@ -27,21 +24,15 @@ __머신러닝으로 하이퍼파라미터 튜닝__
 3. 클러스터링 모델
 4. 차원축소 모델
 
-<<<<<<< HEAD
- __*Usage*__
-=======
+
+
 **Usage**
->>>>>>> 7bc2cb702b7134b19f26ddfeeb6e2d56e443b80c
 
 **from** sklearn.utils.testing **import** all_estimators
 allAlgorithms = all_estimators(type_filter="모델타입")
 
 __from__ sklearn.metrics __import__ accuracy_score
-<<<<<<< HEAD
-for (name, algorithm)　in allAlgorithms:
-=======
 for (name, algorithm) in allAlgorithms:
->>>>>>> 7bc2cb702b7134b19f26ddfeeb6e2d56e443b80c
 
   clf = algorithm() # 각각의 알고리듬 객체 생성
 
