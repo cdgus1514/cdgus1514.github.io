@@ -26,17 +26,17 @@ __머신러닝으로 하이퍼파라미터 튜닝__
 
 
 
-**Usage**
+__[Usage]__
 
-**from** sklearn.utils.testing **import** all_estimators
+**from** sklearn.utils.testing **import** all_estimators  
 allAlgorithms = all_estimators(type_filter="모델타입")
 
-__from__ sklearn.metrics __import__ accuracy_score
+__from__ sklearn.metrics __import__ accuracy_score  
 for (name, algorithm) in allAlgorithms:
 
-  clf = algorithm() # 각각의 알고리듬 객체 생성
+  clf = algorithm()   *# 각각의 알고리듬 객체 생성*
 
-  ##학습 후 평가  
+  *##학습 후 평가*  
   clf.fit(x_train, y_train)
   y_pred = clf.predict(x_test)
   print(name,"알고리듬 정답률 >> ", accuracy_score(y_test, y_pred))
