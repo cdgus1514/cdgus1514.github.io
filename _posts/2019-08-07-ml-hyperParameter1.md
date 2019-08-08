@@ -12,7 +12,7 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 <br>
 <br>
 
-__#머신러닝 하이퍼파라미터 튜닝__
+#__머신러닝 하이퍼파라미터 튜닝__
 =====
 - all_estimators
 - GridSearchCV
@@ -32,9 +32,8 @@ __#머신러닝 하이퍼파라미터 튜닝__
 <br>
 <br>
 <br>
-<br>
 
-__##[Usage]__
+##__[Usage]__
 -----
 
 **from** sklearn.utils.testing **import** all_estimators  
