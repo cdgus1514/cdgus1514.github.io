@@ -45,28 +45,44 @@ for(name, algorithm) in allAlgorithms:
 <br>
 <br>
 
-## __RandomizedSearchCV__
-###### 생성한 모델과 파라미터를 램덤으로 적용하면서 해당 모델에 최적의 매개변수를 찾아주는 기능
-
+## __GridSearchCV__
+###### 생성한 모델과 파라미터를 **순차적** 으로 적용하면서 해당 모델에 최적의 매개변수를 찾아주는 기능
+<br>
 ### __[Usage]__ <br>
 ```python
 from sklearn.model_selection import KFold
 from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import RandomizedSearchCV
 
-# RandomizedSearchCV 매개변수
-parameters = {
-    "C":[1,10,100,1000],
-    "kernel":["linear", "rbf", "sigmoid"],
-    "gamma":[0.001, 0.0001],
-}
-
-# GridSearchCV 매개변수
+# GridSearchCV 매개변수 >> list, dic 모두 사용 가능
 parameters = [
     {"C":[1,10,100,1000], "kernel":["linear"]},
     {"C":[1,10,100,1000], "kernel":["rbf"], "gamma":[0.001, 0.0001]},
     {"C":[1,10,100,1000], "kernel":["sigmoid"], "gamma":[0.001, 0.0001]}
 ]
+
+## 서치
+kfold_cv = KFold(n_splits=5, shuffle=True)
+clf = GridSearchCV(SVC(), parameters, cv=kfold_cv)
+clf.fit(x_train, y_train)
+print("최적의 매개변수 >> ", clf.best_estimator_)
+```
+<br>
+<br>
+
+## __RandomizedSearchCV__
+###### 생성한 모델과 파라미터를 **램덤** 으로 적용하면서 해당 모델에 최적의 매개변수를 찾아주는 기능
+<br>
+### __[Usage]__ <br>
+```python
+from sklearn.model_selection import KFold
+from sklearn.model_selection import RandomizedSearchCV
+
+# RandomizedSearchCV 매개변수 >> list형식만 가능
+parameters = {
+    "C":[1,10,100,1000],
+    "kernel":["linear", "rbf", "sigmoid"],
+    "gamma":[0.001, 0.0001],
+}
 
 ## 서치
 kfold_cv = KFold(n_splits=5, shuffle=True)
