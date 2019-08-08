@@ -30,17 +30,17 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 <br>
 ### __[Usage]__ <br>
 ```python
-from sklearn.utils.testing import all_estimators
+## classifier 알고리즘 모두 추출
 allAlgorithms = all_estimators(type_filter="모델타입")
 
-from sklearn.metrics import accuracy_score
+for(name, algorithm) in allAlgorithms:
+    #각 알고리즘 객체 생성
+    clf = algorithm()
 
-for (name, algorithm) in allAlgorithms:
-  clf = algorithm()  *#각각의 알고리듬 객체 생성*
-*#학습 후 평가*
-clf.fit(x_train, y_train)
-y_pred = clf.predict(x_test)
-print(name,"알고리듬 정답률 >> ", accuracy_score(y_test, y_pred))
+    #학습 후 평가
+    clf.fit(x_train, y_train)
+    y_pred = clf.predict(x_test)
+    print(name,"의 정답률 >> ", accuracy_score(y_test, y_pred))
 ```
 <br>
 <br>
@@ -49,13 +49,29 @@ print(name,"알고리듬 정답률 >> ", accuracy_score(y_test, y_pred))
 ###### 생성한 모델과 파라미터를 램덤으로 적용하면서 해당 모델에 최적의 매개변수를 찾아주는 기능
 
 ### __[Usage]__ <br>
-#### __from__ sklearn.model_selection __import__ RandomizedSearchCV <br>
-#### __from__ sklearn.model_selection __import__ KFlod <br>
-<br>
-###### #RandomizedSearchCV는 리스트 형식 <br>
-###### parameters = { <br>
-######  "model__batch_size": [1,10,20], <br>
-######  "model__optimizer": ["adam", "adadelta", "rmsprop"], <br>
-######  "model__ephocs": [100, 200, 300] <br>
-###### } <br>
-###### search = RandomizedSearchCV(model, parameters, cv=n_splits)
+```python
+from sklearn.model_selection import KFold
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
+
+# RandomizedSearchCV 매개변수
+parameters = {
+    "C":[1,10,100,1000],
+    "kernel":["linear", "rbf", "sigmoid"],
+    "gamma":[0.001, 0.0001],
+}
+
+# GridSearchCV 매개변수
+parameters = [
+    {"C":[1,10,100,1000], "kernel":["linear"]},
+    {"C":[1,10,100,1000], "kernel":["rbf"], "gamma":[0.001, 0.0001]},
+    {"C":[1,10,100,1000], "kernel":["sigmoid"], "gamma":[0.001, 0.0001]}
+]
+
+## 서치
+kfold_cv = KFold(n_splits=5, shuffle=True)
+clf = RandomizedSearchCV(SVC(), parameters, cv=kfold_cv)
+# clf = GridSearchCV(SVC(), parameters, cv=kfold_cv)
+clf.fit(x_train, y_train)
+print("최적의 매개변수 >> ", clf.best_estimator_)
+```
