@@ -31,7 +31,7 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 ### __[Usage]__ <br>
 ```python
 ## classifier 알고리즘 모두 추출
-allAlgorithms = all_estimators(type_filter="모델타입")
+allAlgorithms = all_estimators(type_filter="classifier")
 
 for(name, algorithm) in allAlgorithms:
     #각 알고리즘 객체 생성
