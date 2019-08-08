@@ -29,7 +29,7 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 ###### *출처 : scikit-learn.org*
 <br>
 ### __[Usage]__ <br>
-'''python
+```python
 from sklearn.utils.testing import all_estimators
 allAlgorithms = all_estimators(type_filter="모델타입")
 
@@ -41,14 +41,14 @@ for (name, algorithm) in allAlgorithms:
 clf.fit(x_train, y_train)
 y_pred = clf.predict(x_test)
 print(name,"알고리듬 정답률 >> ", accuracy_score(y_test, y_pred))
-'''
+```
 <br>
 <br>
-## __RandomizedSearchCV__
-### __[Usage]__ <br>
 
-<br>
-<br>
+## __RandomizedSearchCV__
+###### 생성한 모델과 파라미터를 램덤으로 적용하면서 해당 모델에 최적의 매개변수를 찾아주는 기능
+
+### __[Usage]__ <br>
 #### __from__ sklearn.model_selection __import__ RandomizedSearchCV <br>
 #### __from__ sklearn.model_selection __import__ KFlod <br>
 <br>
