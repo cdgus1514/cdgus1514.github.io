@@ -40,16 +40,16 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 #####  clf.fit(x_train, y_train)
 #####  y_pred = clf.predict(x_test)
 #####  print(name,"알고리듬 정답률 >> ", accuracy_score(y_test, y_pred))
-
-
+<br>
+<br>
 ### __from__ sklearn.model_selection __import__ RandomizedSearchCV<br>
 ### __from__ sklearn.model_selection __import__ KFlod<br>
-
-### #RandomizedSearchCV는 리스트 형식
-### parameters = {
-###  "model__batch_size": [1,10,20],
-###  "model__optimizer": ["adam", "adadelta", "rmsprop"],
-###  "model__ephocs": [100, 200, 300]
-###}
+<br>
+##### #RandomizedSearchCV는 리스트 형식
+##### parameters = {
+#####  "model__batch_size": [1,10,20],
+#####  "model__optimizer": ["adam", "adadelta", "rmsprop"],
+#####  "model__ephocs": [100, 200, 300]
+##### }
 <br>
 ##### search = RandomizedSearchCV(model, parameters, cv=n_splits)
