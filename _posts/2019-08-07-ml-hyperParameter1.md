@@ -30,6 +30,8 @@ last_modified_at: 2019-08-07T08:06:00-05:00
 <br>
 ### __[Usage]__ <br>
 ```python
+from sklearn.utils.testing import all_estimators
+
 ## classifier 알고리즘 모두 추출
 allAlgorithms = all_estimators(type_filter="classifier")
 
