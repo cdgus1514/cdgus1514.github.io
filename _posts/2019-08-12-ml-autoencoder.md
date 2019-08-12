@@ -55,6 +55,7 @@ def plot_feature_importances_cancer(model):
 plot_feature_importances_cancer(tree)
 plt.show()
 ```
+<br>
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/ml_importance_features.png)
 <br>
 <br>
