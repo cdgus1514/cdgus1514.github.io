@@ -12,9 +12,9 @@ last_modified_at: 2019-08-12T08:06:00-05:00
 <br>
 
 # 머신러닝 비지도학습 오토인코더
-- 데이터가 어떻게 구성되었는지를 알아내는 문제 범주
+- 데이터가 어떻게 구성되었는지를 알아내는 문제
 - 입력값에 대한 목표치가 주어지지 않는다
-- Y값 없이 X값을 찾는 방식
+- Y값 없이 X값을 넣어 X값을 찾는 방식
 <br>
 <br>
 
@@ -57,14 +57,14 @@ plt.show()
 ```
 <br>
 
-![]({{ site.url }}{{ site.baseurl }}/assets/images/ml_importance_features.png)
+![img1]({{ site.url }}{{ site.baseurl }}/assets/images/ml_importance_features.png)
 <br>
 <br>
 
 ## __autoencode__
 ###### 데이터의 입력값만 주어진 상태로 학습하는 방법
 ###### autoencode (encoder > Representatin > decoder)
-![]({{ site.url }}{{ site.baseurl }}/assets/images/ml_autoencoder.png)
+![img2]({{ site.url }}{{ site.baseurl }}/assets/images/ml_autoencoder.png)
 <br>
 ### __[Usage]__
 ```python
