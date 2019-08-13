@@ -56,8 +56,9 @@ plot_feature_importances_cancer(tree)
 plt.show()
 ```
 <br>
+
 ###### 특성 중요도 시각화 결과
-![img1]({{ site.url }}{{ site.baseurl }}/assets/images/ml_importance_features.png)
+![img1](/assets/images/ml_importance_features.png)
 <br>
 <br>
 
