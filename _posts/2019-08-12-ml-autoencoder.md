@@ -58,14 +58,15 @@ plt.show()
 <br>
 
 ###### 특성 중요도 시각화 결과
-![img1](/assets/images/ml_importance_features.png)
+![img1](/assets/images/ml_importance_feauters.PNG)
 <br>
 <br>
 
 ## __autoencode__
 ###### 데이터의 입력값만 주어진 상태로 학습하는 방법
 ###### autoencode (encoder > Representatin > decoder)
-![img2]({{ site.url }}{{ site.baseurl }}/assets/images/ml_autoencoder.png)
+<!-- ![img2]({{ site.url }}{{ site.baseurl }}/assets/images/ml_autoencoder.png) -->
+![img2](/assets/images/ml_autoencoder.png)
 <br>
 ### __[Usage]__
 ```python
