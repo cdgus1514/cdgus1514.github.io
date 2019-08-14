@@ -65,7 +65,6 @@ plt.show()
 ## __autoencode__
 ###### 데이터의 입력값만 주어진 상태로 학습하는 방법
 ###### autoencode (encoder > Representatin > decoder)
-<!-- ![img2]({{ site.url }}{{ site.baseurl }}/assets/images/ml_autoencoder.png) -->
 ![img2](/assets/images/ml_autoencoder.png)
 <br>
 ### __[Usage]__
