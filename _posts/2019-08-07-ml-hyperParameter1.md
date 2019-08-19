@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning HyperParameter"
-excerrpt: "머신러닝 공부2"
+excerrpt: "머신러닝 공부[Machine Learning]"
 
 categories:
   - 딥러닝

@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Unsupervised Learning"
-excerrpt: "머신러닝 공부3"
+excerrpt: "머신러닝 공부[Machine Learning]"
 
 categories:
   - 딥러닝
